@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/tania-mln/test_automation_ui_testing#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.64.0",
-    "@types/node": "^26.6.5"
+    "@types/node": "^26.6.5",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "jiti": "^2.7.0",
+    "typescript-eslint": "^8.72.1"
   }
 }
