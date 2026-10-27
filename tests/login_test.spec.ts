@@ -11,9 +11,7 @@ test.describe("User login to the tool shop", () => {
       await loginPage.sighnInButton().click();
     });
 
-    test("User tries to login without first registering", async ({
-      page,
-    }) => {
+    test("User tries to login without first registering", async () => {
       await test.step("User enters email and password into input fields", async () => {
         await loginPage.enterEmailandPassword(
           invalidUser.email,
