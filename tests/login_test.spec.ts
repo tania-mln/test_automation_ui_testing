@@ -8,7 +8,7 @@ test.describe("User login to the tool shop", () => {
     test.beforeEach(async ({ page }) => {
       loginPage = new LoginPage(page);
       await page.goto("/");
-      await loginPage.sighnInButton().click();
+      await loginPage.signInButton().click();
     });
 
     test("User tries to login without first registering", async () => {
