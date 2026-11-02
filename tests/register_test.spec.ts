@@ -14,7 +14,7 @@ test.describe("User login to the tool shop", () => {
         await loginPage.signInButton().click();
     });
 
-    test.only('User registers to the tool shop', async () => {
+    test('User registers to the tool shop', async () => {
         await test.step('User is redirected to the registration page', async () => {
             await loginPage.registerLink().click();
             await expect(customerRegistrationPage.customerRegistrationHeader()).toBeVisible();
