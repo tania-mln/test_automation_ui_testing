@@ -3,7 +3,7 @@ import type { Locator, Page } from '@playwright/test';
 export class LoginPage {
     constructor(private readonly page: Page) { }
     
-    sighnInButton = (): Locator => this.page.getByRole('link', { name: 'Sign in' });
+    signInButton = (): Locator => this.page.getByRole('link', { name: 'Sign in' });
     emailInputField = (): Locator => this.page.locator('[data-test="email"]');
     passwordInputField = (): Locator => this.page.locator('[data-test="password"]');
     togglePasswordButton = (): Locator => this.page.locator(
