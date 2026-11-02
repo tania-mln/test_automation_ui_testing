@@ -65,8 +65,10 @@ test.describe("User login to the tool shop", () => {
         });
 
         await test.step('User fills email to the input field', async () => {
-            await customerRegistrationPage.emailInputField().fill(validUser.email);
-            await expect(customerRegistrationPage.emailInputField()).toHaveValue(validUser.email);
+            const { randomUUID } = await import("node:crypto");
+            const email = `john.doe.${randomUUID()}@example.com`;
+            await customerRegistrationPage.emailInputField().fill(email);
+            await expect(customerRegistrationPage.emailInputField()).toHaveValue(email);
         });
 
         await test.step('User fills password to the input field', async () => {
