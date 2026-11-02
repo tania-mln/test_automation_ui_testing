@@ -40,7 +40,7 @@ export class CustomerRegistrationPage {
     });
   }
   passwordInputField(): Locator {
-    return this.page.getByRole("textbox", { name: "Password", exact: true });
+    return this.page.getByLabel("Password", { exact: true });
   }
   showPasswordButton(): Locator {
     return this.page.locator('button:has(svg[data-icon="eye"])');
