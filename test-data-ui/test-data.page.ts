@@ -14,5 +14,5 @@ export const validUser = {
   city: "Warsaw",
   phoneNumber: "123456789",
   email: "john.doe@example.com",
-  password: "SecurePassword123!"
+  password: "QwertyPassword123!"
 };
